@@ -38,25 +38,6 @@ h1{
   font-family: Tahoma;
 }
 
-.submenu{
-    display: none;
-    background-color: #c8ffba;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    font-family: Tahoma;
-}
-
-.subsubmenu{
-  display: none;
-  background-color: #ffdbfd;
-  position: absolute;
-  top: 0%;
-  left:100%;
-  width: 80%;
-  font-family: Tahoma;
-}
-
 .menu>li{
   float: left;
   position: relative;
@@ -64,6 +45,11 @@ h1{
   width: 25%;
   text-align: center;
   list-style-type: none;
+  border-right: 2px solid black;
+}
+
+.menu>li:last-child{
+  border-right: 0px;
 }
 
 .menu li a{
@@ -73,42 +59,32 @@ h1{
   text-decoration: none;
 }
 
-.submenu li{
-  float: none;
-  list-style-type: none;
-
-}
-.menu li:hover .submenu{
+.menu li:hover{
   display: block;
   z-index:3;
 }
 
 .menu li:hover{
-  background-color: #c8ffba;
-}
-
-
-.submenu li:hover .subsubmenu{
-  display: block;
-}
-
-.submenu li:hover{
-  background-color: #ffdbfd;
-}
-
-.subsubmenu li:hover{
-  background-color: white;
+  background-color: #f5d087;
 }
 /*menu end*/
 
 /*content*/
 main{
   background-color: #ffe8ff !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 h2{
   text-align: center;
   font-family: 'Calligraph';
   font-size: 30px;
+}
+
+h3{
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Calligraph';
 }
 
 h4{
@@ -118,8 +94,15 @@ text-decoration: underline;
 font-weight: bold;
 }
 
+article p{
+  font-family: Colibry;
+  font-size: 23px;
+  text-align: center;
+}
+
 p{
   font-family: Colibry;
+  text-align: justify;
   font-size: 23px;
 }
 
@@ -128,3 +111,41 @@ article{
 }
 
 /*content end*/
+
+.about{
+  margin:0 !important;
+  padding:10px !important;
+}
+
+.aside>a{
+  width: 90px;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  display: block;
+  opacity: 0.7;
+}
+/*footer*/
+footer{
+  background-color: #d9b4b4;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+a>img{
+  width: 50px;
+}
+
+img{
+  width: 150px;
+}
+
+.contacts{
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+}
+
+.social-link{
+  display: inline-block;
+}
+/*footer end*/
